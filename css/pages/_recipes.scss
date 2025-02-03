@@ -1,0 +1,425 @@
+@use '../base/variables' as var;
+
+/* Recipe Styles
+---------------------------------------------------------*/
+
+.news {
+	display: block;
+}
+
+.article_card {
+	float: left;
+	width: 30%;
+	margin-right: 40px;
+	height: 350px;
+	overflow: hidden;
+}
+
+.article_card:nth-of-type(3n) { 
+	margin-right: 0px;
+}
+
+
+.featured_story_article_card {
+	float: left;
+    width: 20%;
+    margin-right: 65px;
+    height: 430px;
+}
+
+.featured_story_article_card:nth-of-type(4n) { 
+	margin-right: 0px;
+}
+
+
+.article_title_link, a.article_title_link, a.article_title_link:link, a.article_title_link:hover, a.article_title_link:visited {
+	text-align: center;
+    display: inline-block;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 1.6em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #52782e;
+    text-decoration: none;
+    font-weight: 400;
+    width: 100%;
+	padding-top: 15px;
+	line-height: 1.1em;
+}
+
+.article_card_home {
+	padding: 30px 16px;
+    text-align: center;
+    width: 300px !important;
+    height: 330px;
+    line-height: 1.2em;
+    float: left;
+	overflow: hidden;
+}
+
+.home_recipe_info {
+	position: absolute;
+	opacity: 0;
+	margin-top: 345px;
+    background: #ffffff;
+    width: 300px;
+    height: 120px;
+	transition: all .2s ease-in; 
+}
+
+.article_card_home:hover .home_recipe_info {
+	opacity: 100;
+	margin-top: 230px;
+}
+
+.article_title_link_home, a.article_title_link_home, a.article_title_link_home:link, a.article_title_link_home:hover, a.article_title_link_home:visited {
+	text-align: center;
+    display: inline-block;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 1.3em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #52782e;
+    text-decoration: none;
+    font-weight: 400;
+    width: 100%;
+	padding-top: 30px;
+	line-height: 1.1em;
+}
+
+.home_tags {
+	color: #71533f;
+	font-size: 0.77em;
+}
+
+.featured_article_title_link, a.featured_article_title_link, a.featured_article_title_link:link, a.featured_article_title_link:hover, a.featured_article_title_link:visited {
+    display: inline-block;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 3.3em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #52782e;
+    text-decoration: none;
+    font-weight: 400;
+    width: 100%;
+	padding-top: 15px;
+	line-height: 1.1em;
+}
+
+
+.featured_title {
+	font-size: 1.1em;
+	color: #52782e;
+	font-weight: 600;
+	text-transform: uppercase;
+	display: inline-block;
+	padding-top: 60px;
+}
+
+.recipe_categories {
+	margin-bottom: 70px;
+}
+	
+.article_card_recent {
+	float: left;
+	width: 30%;
+	margin-right: 40px;
+}
+
+.article_card_recent:nth-of-type(3n) { 
+	margin-right: 0px;
+}
+
+.article_buttons {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.recipe_details ul {
+	list-style: none;
+}
+
+.recipe_details ul li {
+	margin-bottom: 1em;
+}
+
+.recipe_details i {
+	color: #52782e;
+}
+
+.category_card {
+	background: #52782e;
+	border-radius: 8px;
+	padding: 210px 0px 0px;
+	text-align: center;
+	font-family: 'Just Another Hand', cursive;
+	letter-spacing: 0.03em;
+    color: #ffffff;
+	font-size: 2.2em;
+	width: 300px !important;
+	/*margin: 0px 30px;*/
+	height: 330px;
+	line-height: 1.2em;
+	box-sizing: border-box;
+}
+
+.category_card.category_card_kidsinthekitchen {
+	background: url("../images/icons/kidsinthekitchen_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_kidsinthekitchen:hover {
+	background: url("../images/animations/KidsinKitchen.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_goodforyou{
+	background: url("../images/icons/GoodForYou_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_goodforyou:hover {
+	background: url("../images/animations/GoodForYou.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_halloween{
+	background: url("../images/icons/Halloween_treats_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_halloween:hover {
+	background: url("../images/animations/Halloween_treats.gif?v=1.0") #52782e no-repeat;
+}
+
+.category_card.category_card_popcornforcelebrations{
+	background: url("../images/icons/PopcornForCelebrations_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_popcornforcelebrations:hover {
+	background: url("../images/animations/PopcornForCelebrations.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_quickeasy{
+	background: url("../images/icons/Quick&Easy_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_quickeasy:hover {
+	background: url("../images/animations/Quick&Easy.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_holidayfun{
+	background: url("../images/icons/HolidayFun_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_holidayfun:hover {
+	background: url("../images/animations/HolidayFun.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_sweettreats{
+	background: url("../images/icons/SweetTreats_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_sweettreats:hover {
+	background: url("../images/animations/SweetTreats.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_surprisingpopcornrecipes{
+	background: url("../images/icons/SurprisingPopcornRecipes_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_surprisingpopcornrecipes:hover {
+	background: url("../images/animations/SurprisingPopcornRecipes.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_savorysensations{
+	background: url("../images/icons/SavorySensations_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_savorysensations:hover {
+	background: url("../images/animations/SavorySensations.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_globalflavors{
+	background: url("../images/icons/GlobalFlavors_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_globalflavors:hover {
+	background: url("../images/animations/GlobalFlavors.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_outdoorfun{
+	background: url("../images/icons/OutdoorFun_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_outdoorfun:hover {
+	background: url("../images/animations/OutdoorFun.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_spicysensations{
+	background: url("../images/icons/SpicySensations_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_spicysensations:hover {
+	background: url("../images/animations/SpicySensations.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_powerpacked{
+	background: url("../images/icons/PowerPacked_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_powerpacked:hover {
+	background: url("../images/animations/PowerPacked.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_berrydelicious{
+	background: url("../images/icons/BerryDelicious_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_berrydelicious:hover {
+	background: url("../images/animations/BerryDelicious.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_schoolsnacking{
+	background: url("../images/icons/Schoolsnacking_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_schoolsnacking:hover {
+	background: url("../images/animations/Schoolsnacking.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_harvestflavors{
+	background: url("../images/icons/harvestflavors_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_harvestflavors:hover {
+	background: url("../images/animations/harvestflavors.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_tailgatetreats{
+	background: url("../images/icons/tailgatetreats_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_tailgatetreats:hover {
+	background: url("../images/animations/tailgatetreats.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_peanutbutter{
+	background: url("../images/icons/peanutbutter_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_peanutbutter:hover {
+	background: url("../images/animations/peanutbutter.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_valentinesday{
+	background: url("../images/icons/Valentines_Day_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_valentinesday:hover {
+	background: url("../images/animations/ValentinesDay_rev.gif") #52782e no-repeat;
+}
+
+.category_card.category_card_caramelcraze{
+	background: url("../images/icons/caramelcraze_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_caramelcraze:hover {
+	background: url("../images/animations/Caramelcraze.gif") #52782e no-repeat;
+}
+
+ .category_card.category_card_cheesybliss{
+	background: url("../images/icons/cheesybliss_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_cheesybliss:hover {
+	background: url("../images/animations/cheesybliss.gif") #52782e no-repeat;
+} 
+
+.category_card.category_card_chocolatecravings{
+	background: url("../images/icons/ChocolateCravings_nogif.png") #52782e no-repeat;
+}
+
+.category_card.category_card_chocolatecravings:hover {
+	background: url("../images/animations/chocolatecravings.gif") #52782e no-repeat;
+}
+
+
+
+.recipe_details ol {
+	margin-left: 20px;
+}
+
+.play_button {
+	position: absolute;
+	margin-top: 65px;
+	margin-left: 95px;
+}
+
+ul.edn_filter_alpha {
+	list-style: none;
+	margin-left: 0px !important;
+
+    li {
+        float:left;
+        padding: 3px 10px;
+        margin-right: 3px;
+
+        &.active {
+            font-weight: 700;
+            background: #f5e9b9;
+            border-radius: 50%;
+        }
+    }
+}
+
+ul.edn_filter_menu {
+	list-style: none;
+	margin-left: 0px !important;
+
+    li {
+        float:left;
+        color: #4d2a09 !important;
+        background-color: #f5e9b9 !important;
+        border-color: #f5e9b9 !important; 
+        border-radius: 8px;
+        min-width: auto !important;
+        min-height: auto !important;
+        padding: 15px 40px !important;
+        background: transparent;
+        margin-left: 10px;
+        cursor: pointer;
+        width: 100px;
+        text-align: center;
+
+        a, a:hover {
+            color: #4d2a09 !important;
+            text-decoration: none !important;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        &:hover {
+            color: #4d2a09 !important;
+            background-color: #e9c223 !important;
+            border-color: #e9c223;
+            border-radius: 8px;
+              
+        }
+
+        &.active {
+            color: #4d2a09 !important;
+            background-color: #e9c223 !important;
+            border-color: #e9c223;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        label:before {
+            content: "\f061";
+            font: var(--fa-font-solid);
+            padding-right: 10px;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+    }
+}

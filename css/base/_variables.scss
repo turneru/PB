@@ -1,0 +1,151 @@
+// Global Variables
+
+// Site Variables
+
+$primary_color: #52782E; $green: #52782E;
+$secondary_color: #E9C006; $yellow:#E9C006;
+$tertiary_color: #71533f; $brown: #71533f;
+$body_color: #24140d; 
+$color_option4: #F5E9B9; $light-yellow: #F5E9B9;
+$color_option5: #EDD571; $alt-yellow: #EDD571;
+$color_option6: #9A9A9A;
+$dark-brown: #3E2F20;
+
+$container_width: 1280px;
+
+$base_font_size: 1.8rem;
+$primary_font: 'Open Sans', sans-serif;
+$secondary_font: "Just Another Hand", system-ui;
+$body_line_spacing: 1;
+
+// Font Weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+$body_weight: $regular;
+$body_bg_color: #ffffff;
+
+// Heading Variables
+
+$heading_weight: $bold;
+$heading_font: $primary_font;
+
+$h1_font: $secondary_font;
+$h1_font_size: 2.61em;
+$h1_weight: 400;
+$h1_color: $brown;
+$h1_line_spacing: 1;
+//$h1_letter_spacing: #{calc(180 / 1000)}em;
+$h1_letter_spacing: 0.03em;
+$h1_bottom_margin: 0.75rem;
+$h1_top_margin: 0px;
+
+$h2_font: $primary_font;
+$h2_font_size: 1.2em;
+$h2_weight: $heading_weight;
+$h2_color: $green;
+$h2_line_spacing: 1.25;
+$h2_letter_spacing: 0;
+$h2_bottom_margin: 0.5em;
+$h2_top_margin: 1em;
+
+$h3_font: $primary_font;
+$h3_font_size: 1em;
+$h3_weight: 600;
+$h3_color: $green;
+$h3_line_spacing: 1.3;
+$h3_letter_spacing: 0;
+$h3_bottom_margin: 0.2em;
+$h3_top_margin: 0px;
+
+$h4_font: $primary_font;
+$h4_font_size: 2.4rem;
+$h4_weight: 400;
+$h4_color: $brown;
+$h4_line_spacing: 1.35;
+$h4_letter_spacing: 0;
+$h4_bottom_margin: 2rem;
+$h4_top_margin: 0px;
+
+//Link Variables
+
+$link_color: $green;
+$link_weight: 600;
+$link_style: none;
+
+$link_hover_color: $green;
+$link_hover_weight: 600;
+$link_hover_style: underline;
+
+// Button Variables
+
+$button_color: $dark-brown;
+$button_padding: 44px 0px 0px 0px;
+$button_font: $primary_font;
+$button_font_size: 16px;
+$button_font_weight: 600;
+$button_bg_color: transparent;
+$button_border_color: transparent;
+$button_border_radius: 0px;
+
+$button_hover_color: $dark-brown;
+$button_hover_font_weight: 700;
+$button_hover_bg_color: transparent;
+$button_hover_border_color: transparent;
+
+// Primary Button Variables
+
+$button_primary_color: $brown;
+$button_primary_font_weight: 600 !important;
+$button_primary_bg_color: $light-yellow;
+$button_primary_border_color: $light-yellow;
+
+$button_primary_hover_color: $brown;
+$button_primary_hover_font_weight: 700 !important;
+$button_primary_hover_bg_color: $yellow;
+$button_primary_hover_border_color: $yellow;
+
+// Secondary Button Variables
+
+$button_secondary_color: $brown;
+$button_secondary_font_weight: 600;
+$button_secondary_bg_color: transparent;
+$button_secondary_border_color: transparent;
+
+$button_secondary_hover_color:$brown;
+$button_secondary_hover_font_weight: $button_font_weight;
+$button_secondary_hover_bg_color: transparent;
+$button_secondary_hover_border_color: transparent;
+
+// Navigation Variables
+
+$nav_bg_color: rgb(134 203 69 / 20%);
+//$nav_item_space_between: 20px;
+$nav_alignment: right;
+
+$nav_item_font: $secondary_font;
+$nav_item_color: $brown;
+$nav_item_font_weight: 400;
+$nav_item_font_size: 28px;
+$nav_item_padding: 26px 0px 46px 55px;
+$nav_item_bg_color: transparent;
+
+$nav_item_hover_color: $brown;
+$nav_item_hover_bg_color: transparent;
+
+$subnav_bg_color: #fff;
+
+$subnav_item_font: $primary_font;
+$subnav_item_color: $brown;
+$subnav_item_font_weight: $regular;
+$subnav_item_font_size: 20px;
+$subnav_item_padding: 15px 0px;
+$subnav_item_bg_color: transparent;
+
+$subnav_item_hover_color: $green;
+$subnav_item_hover_bg_color: transparent;

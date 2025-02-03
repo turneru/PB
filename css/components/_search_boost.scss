@@ -1,0 +1,224 @@
+@use '../base/variables' as var;
+
+/* SearchBoost Styles
+-------------------------------------------------*/
+
+.dnnSearchBox {
+	width:80%;
+}
+
+.search {
+	#sitesearch_input {
+		height: 40px;
+		border-radius: 40px;
+		padding-left: 20px;
+		padding-right: 45px;
+		margin-bottom: 0;
+		background-color: transparent;
+		color: var.$brown;
+		border-width: 2px;
+
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			color: var.$brown;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+			color: var.$brown;
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+			color: var.$brown;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+			color: var.$brown;
+		}
+	}
+
+	.bstrap30 button {
+		padding: 0px 10px 0px 0px !important;
+		width: auto !important;
+		height: auto !important;
+		background: transparent;
+		position: relative;
+		right: 16px;
+		margin-top: 42px;
+		margin-left: 0px !important;
+	}
+
+	.bstrap30 .glyphicon-search:before {
+		content: "\f061";
+		font-family: "Font Awesome 6 Pro";
+		font-weight: 900;
+		font-size: 20px;
+	}
+
+	.input-group-btn {
+		right: 0px;
+	}
+} 
+
+.bstrap30 .row {
+    margin: 0 !important;
+}
+
+.bstrap30 a:focus, .bstrap30 a:hover {
+    color: var.$green;
+    text-decoration: underline !important;
+}
+
+.bstrap30 .btn-primary {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.bstrap30 .pagination>li>a, .bstrap30 .pagination>li>span {
+    color: var.$green !important;
+}
+
+.bstrap30 .pagination>.active>a, .bstrap30 .pagination>.active>a:focus, .bstrap30 .pagination>.active>a:hover, .bstrap30 .pagination>.active>span, .bstrap30 .pagination>.active>span:focus, .bstrap30 .pagination>.active>span:hover {
+	color: var.$green !important;
+    background-color: transparent !important;
+}
+
+.bstrap30 .sb-footer .pagination li::before {
+    content: none !important;
+}
+
+.btn.btn-primary.search-btn {
+	color:  var.$green !important;
+	border-top-color: transparent!important;
+	border-bottom-color: transparent !important;
+	border-right-color: transparent !important;
+}
+
+.input-group-btn {
+	position: absolute !important;
+    margin-top: -33px !important;
+	z-index: 5;
+    right: 40px;
+}
+
+.bstrap30 .btn {
+    font-size: 15px;
+}
+
+.bstrap30 :after {
+    content: "";
+}
+
+.bstrap30 .sb-default .input-group span.twitter-typeahead:first-child .form-control,
+.bstrap30 .sb-default .input-group span.twitter-typeahead:not(:first-child):not(:last-child) .form-control {
+    border-radius: 25px;
+	background: #DBD7D0 !important;
+	border: 0px !important;
+	color: var.$secondary_color !important;
+	padding-left: 35px;
+    width: 100%;
+}
+
+.bstrap30 .sb-default {
+    padding: 0px 0 0px 0; 
+}
+
+.bstrap30 .sb-default .adv-search {
+    max-width: none;
+    margin: 0 auto;
+    width: 100%;
+}
+
+::placeholder {
+	color: #52782e;
+	font-weight: 600;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #52782e;
+	font-weight: 600;
+}
+
+::-ms-input-placeholder {
+	color: #52782e;
+	font-weight: 600;
+}
+
+#sitesearch_input {
+	height: 80px;
+	float: left;
+	border-radius: 10px;
+	border-color: #52782e;
+	color: #52782e;
+	font-weight: 600;
+	padding-left: 30px;
+	border-width: 2px;
+}
+
+#dnn_ctr508_ModuleContent #sitesearch_input {
+	height: 80px;
+	float: left;
+	border-radius: 10px;
+	border-color: #52782e;
+	color: #52782e;
+	font-weight: 600;
+	padding-left: 30px;
+}
+
+// .bstrap30 button {
+// 	display: inline-block;
+// 	padding: 0px 0px 0px 0px;
+// 	cursor: pointer;
+// 	box-sizing: border-box;
+// 	background: url("../images/icons/search.jpg") no-repeat;
+// 	background-size: cover;
+// 	width: 70px !important;
+// 	height: 65px !important;
+// 	border: 0px;
+// 	min-height: auto;
+// 	min-width: auto;
+// 	outline: 0;
+// 	position: absolute;
+// 	margin-top: 8px;
+// 	margin-left: -80px !important;
+// }
+
+.bstrap30 button:hover {
+	outline: 0;
+}
+
+.bstrap30 button:before {
+	content: "";
+}
+
+#body_content ul.pagination {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+
+#body_content ul.pagination li::before {
+	content: "";
+	/* Add content: \2022 is the CSS Code/unicode for a bullet */
+}
+
+.bstrap30 .sb-footer .pagination li {
+	float: left;
+	padding: 0px 10px;
+}
+
+#body_content_top, #body_content { 
+	.bstrap30 .btn.btn-primary.search-btn {
+		margin-top: 48px;
+
+		&:before {
+			content: "\f061";
+			font-family: "Font Awesome 6 Pro";
+			font-weight: 900;
+			font-size: 20px;
+		}
+	}
+}
+
+.bstrap30 .form-control:focus {
+	border-color: #66afe9;
+	outline: 1px solid #000;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}

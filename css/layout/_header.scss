@@ -1,0 +1,62 @@
+//Header Styles
+@use '../base/variables' as var;
+#header {
+	width: 100%;
+	padding-top: 29px;
+
+	&:not(.page_id_71) {
+		background: url(../images/subpage-header-bg.png) no-repeat top center;
+		background-size: cover;
+		min-height: 242px;
+		position: relative;
+		z-index: 900;
+	}
+
+	.header-row {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 46px;
+	}
+
+	.logo-nav-row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
+	}
+
+	.logo {
+		margin-top: 0;
+		padding-bottom: 13px;
+		
+		img {
+			width: 198px;
+		}
+	}
+}
+
+.search-nav-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 100%;
+}
+
+.search {
+	text-align: right;
+	width: 100%;
+	max-width: 327px;
+}
+
+.nav-container {
+	width: 100%;
+}
+
+header > div:first-of-type {
+	font-size: 16px !important;
+}	
+
+.signup {
+	display: inline-block;
+	margin-right: 20px;
+}	
+

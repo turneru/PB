@@ -1,0 +1,864 @@
+@use '../base/variables' as var;
+
+/* Mobile CSS
+================================================== */
+// @media only screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 1.5),
+// only screen and (min-width: 769px) and (-o-min-device-pixel-ratio: 3/2),
+// only screen and (min-width: 769px) and (min--moz-device-pixel-ratio: 1.5),
+// only screen and (min-width: 769px) and (min-device-pixel-ratio: 1.5) {
+//     html {
+//         zoom: 90%;
+//     }
+// }
+
+@media only screen and (max-width: 1825px) {
+	#subscribe .paper-plane {
+		right: 20px;
+	}
+}
+
+@media only screen and (max-width: 1655px) {
+	.powerpop_gif.gif01 {
+		left: 0 !important;
+    	max-width: 225px !important;
+	} 
+	
+	.powerpop_gif.gif06 {
+		top: 930px !important;
+		right: 1% !important;
+		max-width: 190px !important;
+	} 
+
+	#subscribe .paper-plane {
+		margin-top: -156px;
+
+		img {
+			width: 406px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1600px) {
+	#home-hero .kernel-3 {
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 1455px) {
+	.powerpop_gif.gif01 {
+		left: -1% !important;
+		max-width: 175px !important;
+	}
+	
+	.powerpop_gif.gif06 {
+		top: 965px !important;
+		right: 10px !important;
+		max-width: 150px !important;
+	}
+
+	#subscribe .paper-plane {
+		margin-top: -96px;
+
+		img {
+			width: 256px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1330px) {
+	.powerpop_gif.gif01 {
+		left: -2% !important;
+		max-width: 145px !important;
+	}
+	
+	.powerpop_gif.gif06 {
+		top: 985px !important;
+		right: 10px !important;
+		max-width: 125px !important;
+	}
+}
+
+@media only screen and (max-width: 1250px) {
+	.powerpop_gif {
+		display: none;
+	} 
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 1125px) {
+	#header .header-row {
+		-moz-column-gap: 20px;
+		column-gap: 20px;
+	}
+
+	#dnnMenu .topLevel li a {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 1025px) {
+	#dnnMenu > .topLevel > li > a {
+		background: transparent !important;
+		padding: 26px 0px 33px 0px !important;
+	}
+}
+
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 1300px) {
+	
+}
+
+@media only screen and (min-width: 1700px) {
+    .home-hero-top {
+        zoom: 90%;
+    }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1699px) {
+    .home-hero-top {
+        zoom: 80%;
+    }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+    .home-hero-top {
+        zoom: 70%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1299px) {
+    html {
+        zoom: 90%;
+
+		.home-hero-top {
+			zoom: 70%;
+		}
+    }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 768px) {
+	
+	.slicknav_menu {
+		display: block;
+	}
+	.nav, .desktop  {
+		display:none;	
+	}
+	
+	.mobile, .flex {
+		display: block;
+	}
+	.left, .center, .right {
+		text-align: center;
+	}
+	
+	.dnnFormItem > label.dnnFormLabel {
+    	width: auto;
+	}	
+	
+	.dnnLabel {
+    	width: auto;
+	}	
+	
+	#navigation, .top, .desktop, .button_callout, #back2Top, #bottom_bg_icon, .floating_popcorn_01, #search_arrow, .powerpop_gif {
+		display:none !important;	
+	}
+
+	.history_popcorn_top {
+    	background: transparent;
+    	height: auto; 	
+	 	margin-top: 0px;
+		position: relative;
+	}
+	
+	.article_card {
+		float: left;
+		width: 100%;
+		margin-right: 0px;
+		height: 350px;
+		overflow: hidden;
+	}
+	
+	#yellow_2col_content {
+		margin-top:0px;
+	}
+	
+	.page_header {
+		width: 100%;
+		height: auto;
+		background: #52782e;
+		border-radius: 8px;
+		color: #ffffff;
+		text-transform: uppercase;
+		font-family: 'Just Another Hand', cursive;
+		font-size: 2em;
+		letter-spacing: 0.03em;
+		display: inline-block;
+		align-items: center;
+		margin: 0px 0px;
+		padding-left: 0px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+	
+	#body_content {
+    	width: 100%;
+    	margin-top: 25px;
+    	padding-bottom: 150px;
+    	position: relative;
+    	z-index: 50;
+	}
+	
+	.slick-list {
+  		overflow: hidden;
+	}
+	
+	.tagline_text {
+    	position: absolute;
+    	left: 23%;
+    	margin-left: 0px;
+    	top: 0;
+    	width: 60%;
+	}
+	
+	.our_story_content {
+    	background: transparent;
+	}
+	
+	.ask_poppy_top {
+    	background: transparent;
+		margin-bottom: 70px;
+	}
+	
+	label, legend {
+    	display: inline;
+	}
+	
+	#page_hero h1 {
+    	width: auto;
+		font-size: 60px;
+	}
+	
+	.play-button {
+    	margin-left: 116px;
+	}
+	
+	.page_header_icon {
+		padding-bottom: 20px;
+	}
+	
+	.featured_story_article_card {
+    	float: left;
+    	width: 100%;
+    	margin-right: 65px;
+    	height: auto;
+	}
+	
+	#memory_game iframe {
+		min-height: 500px;
+	}
+
+	
+// New CSS - 2024 Redesign
+//=========================================================
+	#header:not(.page_id_71) {
+		min-height: 205px;
+	}
+
+	#header {
+		padding-top: 80px;
+
+		.header-row {
+			flex-direction: column-reverse;
+		}
+
+		.logo {
+			padding-bottom: 0;
+
+			img {
+				width: 128px;
+			}
+		}
+	} 
+
+	.search-nav-container {
+		flex-direction: column;
+		align-items: flex-end;
+		width: 100%;
+		display: none;
+	}
+
+	.slicknav_nav .col-md-3.search {
+		text-align: center;
+		padding: 15px 20px 15px;
+		max-width: none;
+
+		#sitesearch_input {
+			background-color: #e7f5da;
+		}
+
+		.bstrap30 button {
+			position: absolute;
+			top: 44px;
+			margin-top: 0;
+
+			.glyphicon-search:before {
+				font-size: 16px;
+			}
+		}
+	}
+
+	#home_body_content h1 {
+		font-size: 70px;
+		line-height: 80px;
+	}
+
+	#home-hero {
+		min-height: auto;
+		padding-bottom: 0;
+		overflow: hidden;
+
+		.video {
+			right: 20px;
+			top: 70px;
+
+			.video-container {
+				width: 360px;
+				height: 360px;
+
+				#video01 {
+					position: absolute;
+					top: 35px;
+					left: 16px;
+					width: 93% !important;
+					height: 93% !important;
+					z-index: 100;
+				}
+
+				svg {
+					top: 20px;
+					right: -6px;
+				}
+
+				#circle01 .circle01 {
+					r: 175px;
+					stroke-width: 6px;
+				}
+			}
+		}
+
+		.col-md-7 {
+			padding-top: 0 !important;
+		}
+
+		.hero-img-row {
+			margin-bottom: 175px;
+		}
+
+		.tagline {
+			font-size: 26px;
+			line-height: 34px;
+			margin-top: 0px;
+
+			&.line2 {
+				padding-left: 45px;
+				margin-top: -10px;
+			}
+
+			span {
+				font-size: 50px;
+				line-height: 50px;
+			}
+
+			.accent-1 {
+				margin-top: -10px;
+				width: 5px;
+			}
+
+			.accent-2 {
+				margin-left: 14px;
+				margin-top: -6px;
+				width: 14px;
+			}
+
+			.accent-3 {
+				margin-left: 20px;
+				margin-top: 11px;
+				width: 20px;
+			}
+		}
+		
+		.underline {
+			margin-right: 18px;
+			float: right;
+			top: -5px;
+			position: relative;
+			width: 100px;
+		}
+
+		.img-container-sm {
+			max-width: 125px;
+			height: 125px;
+			margin-top: 0;
+			left: auto;
+			right: -245px;
+			bottom: -425px;
+			transform: none;
+			opacity: 1;
+
+			.outline {
+				top: 0;
+				left: 0;
+				width: 100px;
+			}
+
+			.inner-image {
+				top: 5px;
+				left: 5px;
+				width: 92px;
+			}
+		}
+
+		.img-container-lg {
+			width: 250px;
+			height: 237px;
+			top: 110px;
+			left: -80px;
+
+			.outline {
+				top: 208px;
+				left: 0px;
+				width: 250px;
+			}
+
+			.inner-image {
+				top: 251px;
+				left: 35px;
+				width: 185px;
+			}
+		}
+
+		.popcorn-cutout {
+			width: 100px;
+			right: 0;
+			bottom: -5px;
+		}
+
+		.kernel-2 {
+			display: none;
+		}
+
+		.kernel-1 {
+			right: auto;
+			left: 10px;
+			top: 30px;
+
+			img.kernel-right {
+				width: 20px;
+			}
+		}		
+
+		.kernel-3 {
+			top: 150px;
+			right: 25px;
+			left: auto;
+			display: block;
+
+			img.kernel-left {
+				width: 50px;
+			}
+		}
+	} 
+
+	.nutrition-btn {
+		margin-bottom: 0px;
+		margin-top: 255px;
+	}
+
+	#featured-recipes {
+		margin-bottom: -55px;
+
+		h1 {
+			margin-top: 0;
+			padding-top: 50px;
+		}
+
+		.featured-bottom {
+			padding: 0 10px;
+		}
+
+		.featured-outer {
+			padding: 15px;
+
+			.featured-inner {
+				padding: 15px 20px;
+				background: #fff;
+
+				.stars {
+					display: none;
+				}
+			}
+		}
+
+		.edn_676_article_list_wrapper {
+			margin-bottom: 50px;
+		}
+
+		.article_card_featured_home {
+			.card-text {
+				padding-left: 0px;
+			}
+
+			h1 {
+				padding-top: 0;
+			}
+		}
+
+		.article_card_small_featured_home {
+			margin: 0 10px 40px 0 !important;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+
+			.card-text {
+				padding-left: 0px;
+				margin-top: 20px;
+			}
+
+			.recipe-btn {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	#home_body_content #featured-recipes .slick-prev, #home_body_content #featured-recipes .slick-next {
+		top: auto;
+		bottom: -110px;
+	}
+	#home_body_content #featured-recipes .slick-prev, #home_body_content #featured-recipes .slick-prev:hover {
+		left: 50px;
+	}
+	#home_body_content #featured-recipes .slick-next, #home_body_content #featured-recipes .slick-next:hover {
+		right: 50px;
+	}
+
+	.recipe-graphic {
+		display: none;
+	}
+
+	#healthy-snacking-top {
+		min-height: 125px;
+	}
+
+	#healthy-snacking {
+		#facts_content {
+			padding: 25px 0px 0px;
+
+			.steps {
+				max-height: none;
+	
+				.text {
+					max-height: none;
+					overflow: visible;
+	
+					li {
+						padding-top: 20px;
+						padding-bottom: 30px;
+	
+						.i {
+							padding-bottom: 0px;
+						}
+					}
+				}
+			}
+		}
+
+		.intro {
+			.accent-left {
+				top: -8px;
+				margin-left: 0;
+				left: -5px;
+				width: 25px;
+			}
+			.accent-right {
+				top: 0;
+				margin-left: 0;
+				right: 0px;
+				width: 30px;
+			}
+
+			p br {
+				display: none;
+			}
+			.callout_alt {
+				width: 85%;
+				padding-bottom: 25px;
+			}
+		} 
+	} 
+
+	.cornstalk, .lightbulb {
+		display: none;
+	}
+
+	#teaching-kids-top {
+		min-height: 105px;
+	}
+
+	#teaching-kids {
+		margin-top: -5px;
+		padding-top: 100px;
+		overflow: hidden;
+
+		h1 {
+			margin-top: 25px;
+		}
+
+		img.rocket {
+			left: 0px;
+			bottom: auto;
+			width: 95px;
+			top: -95px;
+		}
+
+		.kids-row {
+			flex-direction: column-reverse;
+
+	
+			.image {
+				padding-left: 0;
+			}
+
+			img.atom {
+				width: 95px;
+				right: 5px;
+				top: -50px;
+			}
+		}
+
+		.dotted-line-teaching img {
+			width: 100%;
+		}
+	
+		.dotted-line-kids {
+			right: -120px;
+			bottom: 300px;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.kids-kitchen {
+			display: none;
+		}
+	} 
+
+	#tik-tok {
+		.hashtag-bubble {
+			display: none;
+		}
+		.container {
+			.text {
+				padding-left: 0px;
+				padding-top: 50px;
+			}
+
+			.video-container {
+				width: 350px;
+				height: auto;
+
+				.play-button {
+					display: none;
+				}
+			} 
+		}
+	} 
+
+	#subscribe {
+		position: relative;
+		
+		.subscribe-title {
+			margin-bottom: 20px;
+			font-size: 30px;
+			line-height: 35px;
+			margin-top: 50px;
+		}
+
+		.paper-plane {
+			right: 8px;
+			top: 8px;
+			margin-top: 0;
+
+			img {
+				width: 250px;
+			}
+		}
+	}
+
+	#body_content, #body_content_top, #yellow_content, #yellow_2col_content, #featured-recipes, #teaching-kids, #tik-tok, #resources_content, #featured_content, #toggle_section, #facts_content, #join_section {
+		.container {
+			padding: 0 20px;
+		}
+	}
+
+	#yellow_content {
+		margin-top: 0px;
+		padding: 50px 0px 100px 0px;
+	}
+
+	#howto_content {
+		.container {
+			padding: 0;
+		}
+	}
+
+	#facts_content {
+		.steps {
+			max-height: none;
+		}
+
+		.bx-viewport .bx-wrapper .bx-controls {
+			display: none;
+		}
+	}
+
+	#toggle_section .toggler h4 {
+		padding: 10px 5px;
+		font-size: 2.2rem;
+	}
+
+	#yellow_2col_powerpop .container {
+		padding: 0 20px !important;
+	}
+
+	#body_content_top {
+		margin-top: 25px;
+	}
+
+	.category_card {
+		margin: 0px auto;
+	}
+
+	.recipe_categories {
+		.slick-prev, .slick-prev:hover {
+			left: -25px;
+		}
+		.slick-next, .slick-next:hover {
+			right: -20px;
+		}
+	}
+
+	table.styled {
+		td {
+			padding: 5px !important;
+		}
+	
+		th {
+			padding: 5px !important;
+		}
+	}	
+
+	#footer {
+		padding-top: 20px;
+		margin-top: -100px;
+		background: url(../images/footer_bg_mobile.png) no-repeat top center;
+		background-size: cover;
+
+		.row.no-margin:nth-of-type(1) {
+			display: flex;
+			flex-direction: column-reverse;
+			width: 100%;
+		}
+
+		.footer-logo {
+			text-align: center;
+			position: relative;
+			top: 80px;
+		}
+
+		.footer-title {
+			margin-top: 100px;
+			text-align: center;
+		}
+
+		.address {
+			text-align: center;
+		}
+
+		.vert-bar {
+			display: none;
+		}
+
+		.footer-links {
+			color: #472405;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+
+		.social {
+			margin-top:25px;
+		}
+
+		.link-social-row .col-md-12 {
+			flex-direction: column;
+
+			a.social_media,  a.social_media:link,  a.social_media:visited,  a.social_media:active {
+				width: 46px;
+				height: 46px;
+				line-height: 45px;
+				font-size: 22px;
+				margin-left: 3px;
+			}
+		}
+
+		.languages {
+			margin-top: 25px;
+			text-align: center;
+
+			.title {
+				line-height: 18px;
+				margin-bottom: 5px;
+			}
+
+			a.footer_links {
+				display: block;
+			}
+		}
+
+		.copyright {
+			text-align: center;
+		}
+	}
+
+	.modal-p {
+		width: 100%;
+	}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+	.footer-links a.footer_links.mt19 {
+		margin-top: 19px;
+	}
+
+}

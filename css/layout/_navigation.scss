@@ -1,0 +1,261 @@
+//Navigation Layout & Styles
+@use '../base/variables' as var;
+
+#navigation {
+	z-index: 3000;
+	width: 100%;
+	padding-top: 18px;
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+.nav {
+  margin: 0px auto;
+  text-align: var.$nav_alignment;
+}
+	
+#dnnMenu {
+	.topLevel {
+		position:relative;
+		padding:0px 0px 0px 0px;
+		margin:0px 0px 0px 0px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		li {
+			float:left;
+			margin:0;
+			list-style-type:none;
+			position:relative;
+			margin-top: 0px;
+
+			a {
+				display:block;
+				color: var.$nav_item_color;
+				font-size: var.$nav_item_font_size;
+				font-weight: var.$nav_item_font_weight;
+				text-decoration:none;
+				padding: var.$nav_item_padding;
+				box-sizing: border-box;
+				font-family: var.$secondary-font;
+				text-transform: uppercase;
+				letter-spacing: .025em;
+			}
+
+			&:hover .subLevel{
+				visibility: visible;
+				opacity: 1;
+			}
+		}		
+
+		li:hover > a, li > a:hover, > li.selected > a, > li.selected {
+			color: var.$nav_item_hover_color;
+			text-decoration:none;
+		}
+	}
+
+	> .topLevel > li {
+		&:nth-child(1) > a {
+			// background: url("../images/nav_about.png") no-repeat 0px 10px;
+			background: url("../images/menu/AllAboutPopcorn_Icon.svg") no-repeat 0px 6px;
+			background-size: 47px 55px;
+		}
+		
+		&:nth-child(2) > a {
+			// background: url("../images/nav_recipes.png") no-repeat 0px 10px;
+			background: url("../images/menu/Recipes_Icon.svg") no-repeat 0px 5px;
+			background-size: 41px 55px;
+		}
+		
+		&:nth-child(3) > a {
+			//background: url("../images/nav_learning.png") no-repeat 0px 10px;
+			background: url("../images/menu/Learning_Icon.svg") no-repeat 0px 5px;
+			background-size: 50px 55px;
+		}
+		
+		&:nth-child(4) > a {
+			// background: url("../images/nav_kids.png") no-repeat 0px 0px;
+			padding: 26px 0px 46px 80px;
+			background: url("../images/menu/KidsCorner_Icon.svg") no-repeat 0px 0px;
+			background-size: 70px 60px;
+		}
+		
+		&:nth-child(5) > a {
+			//background: url("../images/nav_newsroom.png") no-repeat 0px 18px;
+			background: url("../images/menu/Newsroom_Icon.svg") no-repeat 0px 0px;
+			background-size: 48px 70px;
+		}	
+	}
+
+	> .topLevel > li > a:after {
+		opacity: 0;
+		height: 8px;
+		content: url(../images/About_Underline.svg);	
+		display: block;		
+		width: 0%;
+		position: relative;
+		top: -8px;
+	}
+
+	> .topLevel > li:hover > a:after {
+		opacity: 1;
+		height: 8px;
+		display: block;
+		transition: width 0.75s ease, opacity 0.25s ease-in;
+		width: 100%;
+	}
+
+	> .topLevel > li:nth-child(2) > a:after {
+		content: url(../images/Recipes_Underline.svg);
+	}
+
+	> .topLevel > li:nth-child(3) > a:after {
+		content: url(../images/Learning_Underline.svg);
+	}
+
+	> .topLevel > li:nth-child(4) > a:after {
+		content: url(../images/KidsCorner_Underline.svg);
+	}
+	> .topLevel > li:nth-child(5) > a:after {
+		content: url(../images/Newsroom_Underline.svg);
+	}
+
+	.subLevel {
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s, opacity 0.3s linear;
+		position:fixed;
+		left: 0;
+		width:100%;
+		margin:0;
+		padding:0;
+		z-index:5000;
+		background-color: transparent;
+		height: 303px;
+
+		> .container {
+			background-color: var.$subnav_bg_color;
+			//padding: 50px 133px 25px;
+			padding: 50px 58px 25px;
+			border-radius: 20px;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			position: relative;
+			z-index: 1200;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-content: flex-start;
+			height: 208px;
+
+			&.length456 {
+				height: 104px;
+			}
+
+			&.length789 {
+				height: 156px;
+			}
+
+			li {
+				float: left;
+				border-top: 0px;
+				width: 33.33%;
+				padding: 0px 0px 0px 0px;
+				border-bottom: none;
+				min-width: auto !important;
+				margin-right: 0;
+				min-height: 52px;
+				margin-bottom: 0px;
+
+				a {
+					display:block;
+					color: var.$subnav_item_color;
+					padding: 0px; 
+					text-align: left;
+					border: 0px;
+					font-size: var.$subnav_item_font_size;
+					font-weight: var.$subnav_item_font_weight;
+					font-family: var.$primary_font;
+					text-transform: none;
+					background: none !important;
+
+					&:hover {
+						color: var.$subnav_item_hover_color;
+						background-color: var.$subnav_item_hover_bg_color;
+						font-weight: 700;
+
+						&:after {
+							content: "\f178";
+							font-family: "Font Awesome 6 Pro";
+							font-weight: 900;
+							margin-left: 10px;
+							color: var.$green;
+						}
+					}
+				}
+
+				&.first > .subLevelRight{
+					top:0px;
+				}
+
+				&.first.last > .subLevelRight{
+					top:2px;
+				}
+
+				&.hover > .subLevelRight{
+					display:none;
+				}
+
+				&.first > .subLevelRight li.first > .subLevelRight {
+					top:0px;
+				}
+
+			}
+		}
+	}
+
+	.subLevelRight {
+		display:none;
+		position:absolute;
+		left:100%;
+		top:0px;
+		width:300px;
+		margin:0 0 0 0px;
+
+		ul {
+			display:block;
+		
+			li {
+				position:relative;
+
+				a {
+					display:block;
+
+					div {
+						display:block;
+						white-space:nowrap;
+					}
+				}
+
+				&.first > a {
+					background-image:none;
+
+					div {
+						background-image:none;
+					}
+				}
+
+				&.first.last > a div {
+					background-image:none;
+				}
+			}
+		}
+	}
+}

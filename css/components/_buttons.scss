@@ -1,0 +1,194 @@
+@use '../base/variables' as var;
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+.btn,
+button, 
+.eds_news_sb_skin.eds_subCollection_news .ednMoreArticlesTriggerWrapper > button.trigger {
+	display: inline-block;
+	//padding: var.$button_padding;
+	color: var.$button_color !important;
+	text-align: center;
+	font-size: var.$button_font_size;
+	font-weight: var.$button_font_weight;
+	font-family: var.$primary_font;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	background-color: var.$button_bg_color;
+	//background: url(../images/animations/YellowCircleButton_AnimatedGif.gif) no-repeat;
+	background-size: cover;
+	min-width: 280px;
+	min-height: 99px;
+	border-radius: var.$button_border_radius;
+	border: 1px solid var.$button_border_color;
+	cursor: pointer;
+	box-sizing: border-box;
+	background: transparent;
+	padding: 35px 0 0 0;
+	position: relative; 
+
+	&:before {
+		content: "\f061";
+		font: var(--fa-font-solid);
+		padding-right: 10px;
+		color: var.$green;
+	}
+
+	&:hover {
+		
+		color: var.$button_hover_color !important;
+		font-weight: var.$button_hover_font_weight !important;
+		border-color: var.$button_hover_border_color;
+		background-color: var.$button_hover_bg_color;
+		text-decoration: none;
+		outline: 0;
+	}
+
+	// Primary Button
+
+	&-primary {
+		color: var.$button_primary_color !important;
+		font-weight: var.$button_primary_font_weight !important;
+		background-color: var.$button_primary_bg_color !important;
+		border-color: var.$button_primary_border_color; 
+		border-radius: 8px;
+		min-width: auto !important;
+		min-height: auto !important;
+		padding: 15px !important;
+		text-transform: uppercase;
+		border: 0;
+		background: none;
+
+		&:hover {
+			color: var.$button_primary_hover_color !important;
+			font-weight: var.$button_primary_hover_font_weight !important;
+			background-color: var.$button_primary_hover_bg_color !important;
+			border-color: var.$button_primary_hover_border_color; 
+		}
+	}
+
+	// Secondary Button
+
+	// &-secondary {
+	// 	color: var.$button_secondary_color !important;
+	// 	font-weight: var.$button_secondary_font_weight !important;
+	// 	background-color: var.$button_secondary_bg_color !important;
+	// 	border-color: var.$button_secondary_border_color;
+	// 	text-decoration: none;
+	// 	text-transform: uppercase;
+	// 	font-size: 16px;
+	// 	line-height: 20px;
+	// 	position: relative;
+	// 	min-width: auto;
+
+	// 	&:before {
+	// 		color: var.$green;
+	// 		content: "\f061";
+	// 		font: var(--fa-font-solid);
+	// 		padding-right: 10px;
+	// 	}		
+
+	// 	&:after {
+	// 		background: url(../images/green-underline.png) no-repeat bottom;
+	// 		background-size: contain;
+	// 		opacity: 0;
+	// 		height: 20px;
+	// 		content: "";
+	// 		display: block;
+	// 		transition: width .5s ease, opacity .25s ease-in;
+	// 		width: 0%;
+	// 		height: 0;
+	// 		position: absolute;
+	// 	}
+
+	// 	&:hover {
+	// 		color: var.$button_secondary_hover_color !important;
+	// 		font-weight: 700 !important;
+	// 		background-color: var.$button_secondary_hover_bg_color !important;
+	// 		border-color: var.$button_secondary_hover_border_color; 
+	// 		text-decoration: none;
+
+	// 		&:after {
+	// 			background: url(../images/green-underline.png) no-repeat bottom;
+	// 			background-size: contain;
+	// 			opacity: 1;
+	// 			height: 20px;
+	// 			content: "";
+	// 			display: block;
+	// 			transition: width .5s ease, opacity .25s ease-in;
+	// 			width: 100%;
+	// 		}			
+	// 	}
+	// }
+}
+
+#Layer_1 {
+	width: 100%;
+	max-width: 280px;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#Path_686 {
+	fill: none;
+	stroke: #e9c006;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+	stroke-width: 4px;
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	animation: stroke .75s linear forwards;
+	display: none;
+}
+
+.button:hover #Path_686 {
+	display: block;
+	animation: stroke .75s linear forwards;
+}
+
+.button.button-secondary, button.button-secondary, input[type="submit"].button-secondary, input[type="reset"].button-secondary, input[type="button"].button-secondary {
+	color: #4d2a09 !important;
+	background-color: #e9c223 !important;
+	border-color: #e9c223 !important;
+	border-radius: 8px;
+	min-width: auto !important;
+	width: 100% !important;
+	min-height: auto !important;
+	padding: 15px !important;
+	background: transparent;
+
+	&:before {
+		content: "\f061";
+		font: var(--fa-font-solid);
+		padding-right: 10px;
+	}
+
+	&:hover {
+		color: #4d2a09 !important;
+		background-color: #e9c223 !important;
+		border-color: #e9c223;
+		border-radius: 8px;
+	}
+}
+
+.eds_news_sb_skin.eds_subCollection_news .ednMoreArticlesTriggerWrapper > button.trigger {
+	background: none;
+	position: relative;
+	padding: 0;
+
+	&> span.actionTextContainer span {
+		color: #71533f !important;
+		font-size: 16px;
+	}
+
+	&:hover {
+		#Path_686 {
+			display: block;
+			animation: stroke 1.5s linear forwards;
+		}
+	}
+}
